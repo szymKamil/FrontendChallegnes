@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>    
+<meta charset="utf-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;700;900&display=swap" rel="stylesheet"> 
+<title>Frontend Mentod First Challenge</title>
+<style>
+* { 
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body {
+    background: url("https://source.unsplash.com/0ZPSX_mQ3xI/1600x900") no-repeat center center/cover;
+    margin-right: auto;
+    max-width: 1440px;
+    font-family: 'Red Hat Display', sans-serif;
+    overflow: hidden;
+        
+}
+
+.challenge {
+    background: url("pattern-background-desktop.svg") no-repeat;
+    background-color: hsl(225, 100%, 94%);
+    max-width: 1440px;
+    height: 890px;
+     
+}
+
+.main {
+    height: 700px;
+    width: 450px;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 20px;
+    position: absolute;
+    top: 10%;
+    left: 40%;
+    overflow: hidden;    
+    text-align: center;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
+
+h1 {
+    font-weight: 700;
+    font-size: 36px;
+}
+
+p {
+    font-size: 18px;  
+    font-weight: 400;
+    margin-bottom: 50px;
+    color: gray;
+    padding-top: 3px;
+}
+
+.annual {
+    display: flex;
+    width: 350px;
+    height: 70px;
+    background-color: hsl(225, 20%, 96%);    
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+}
+
+.annual > a {
+    color: hsl(223, 79%, 43%);
+    font-weight: 700;
+}
+
+h2 {
+    margin-top: 55px;
+    margin-bottom: -20px;
+}
+
+
+button {
+    font-family: 'Red Hat Display', sans-serif;
+    width: 350px;
+    height: 60px;
+    font-size: 16px; 
+    font-weight: 700;
+    cursor: pointer;  
+}
+
+
+.button1 {
+    background-color: hsl(245, 75%, 52%);
+    border-radius: 17px;  
+    color: white;      
+    box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 10px;
+}
+
+.button2 {
+    background-color: inherit;
+    text-decoration: none;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    color: gray;
+}
+
+.attribution {
+    position: absolute;
+    bottom: 0px;
+    text-align: center;
+    margin-left: 520px;
+}
+
+@media only screen 
+  and (min-width: 375px) 
+  and (max-width: 667px) 
+  {
+    
+
+    body {
+        height: 667px;
+        width: 375px;
+        background: none;
+        background-color: hsl(225, 51%, 55%);  
+        margin-left: auto;
+        margin-right: auto;
+        margin: 0;
+        overflow: hidden;
+    }
+    
+    .main {
+        height: 500px;
+        width: 350px;
+        background-color: hsl(225, 100%, 98%);
+        border-radius: 20px;
+        position: absolute;
+        left: 10px; 
+        overflow: hidden;    
+        text-align: center; 
+        box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+    }
+
+    .main img {
+        height: 140px;
+        width: 100%;
+    }
+
+    h1 {
+        font-weight: 700;
+        font-size: 18px;
+        }
+    
+    p {
+        font-size: 16px;  
+        font-weight: 400;
+        margin-bottom: 20px;
+        color: gray;
+    }
+    
+    .annual {
+        display: flex;
+        width: 290px;
+        height: 80px;
+        background-color: hsl(225, 20%, 96%);    
+        overflow: hidden;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px;
+        border-radius: 15px;
+    }
+    
+    .annual > img {
+        height: 45px;
+        width: 45px;
+        margin-left: 10px;
+    
+    }
+
+    .annual  h2 {
+        font-size: 12px;
+        margin: 0;
+    }
+    .annual  p {
+        font-size: 14px;
+        margin: 0;
+        color: gray;
+        padding-top: 4px;
+    }
+
+    .annualinside {
+        margin-left: 10px;
+       
+    }
+
+    .annual > a {
+        font-size: 18px;
+        margin-left: -10px;
+        padding-right: 10px;
+    }
+
+
+    button {
+        font-family: 'Red Hat Display', sans-serif;
+        width: 300px;
+        height: 50px;
+        font-size: 16px; 
+        font-weight: 700;
+        cursor: pointer;  
+      
+    }
+    
+    
+    .button1 {
+        background-color: hsl(245, 75%, 52%);
+        border-radius: 17px;  
+        color: white;      
+        box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.19);
+        margin-bottom: 5px;
+        margin-top: -10px;
+    }
+    
+    .button2 {
+        background-color: inherit;
+        text-decoration: none;
+        border: none;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        color: gray;
+    }
+    
+    .attribution {
+        background-color: inherit;
+        text-align: center;
+        display: none;
+    }
+}
+</style>
+</head>
+<body>
+    <div class="challenge">    
+<div class="main">
+    <img class="hero" src="illustration-hero.svg" alt="heroimage">
+    <br>
+    <br>
+    <h1>Order summary</h1>
+    <p>You can now listen to milions of songs,<br> audiobooks, and podcasts on any device<br> anywhere you like!</p>
+    <div class="annual">
+        <img src="icon-music.svg" alt="icon-music">
+        <div class="annualinside" style="margin-right: 70px"><h2>Annual Plan</h2>
+        <p>$59.99/year</p></div>
+        <a href="#">Change</a>
+    </div>
+    <br>
+    <button class="button1">Proceed to Payment</button>
+    <button class="button2">Cancel Order</button>    
+</div>
+<div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/szymKamil">Kamil Szymański</a>.
+  </div>
+</div>
+</body>
+</html>

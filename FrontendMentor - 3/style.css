@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    background: url("https://source.unsplash.com/0ZPSX_mQ3xI/1600x900") no-repeat center center/cover;
+    height: 120vh;
+}
+
+body {
+   max-width: 1440px;
+   height: 100vh;
+   background-color: white; 
+   margin: 0;
+}
+
+main {
+   display: flex;
+   padding: 15vh 20vh;        
+   border-radius: 20px;
+   flex-direction: row;
+   flex-flow: nowrap;
+}
+
+main > div {
+    position: relative;
+}
+
+main > div> h1 {
+   color: hsl(0, 0%, 95%);        
+   font-family: 'Big Shoulders Display', cursive;
+   font-size: 3vw;
+   padding: 50px 0 30px 0;
+}
+
+main > div>  p {
+   color: hsla(0, 0%, 100%, 0.75);
+   font-family: 'Lexend Deca', sans-serif;
+   margin: 0 20px 0px 0;
+   line-height: 32px;
+   font-size:calc(1px + 1.1vw);
+}
+
+main > .sedan, .SUVs, .Luxury {
+   padding: 50px 0 0 40px;
+
+}
+
+.sedan {
+   background-color: hsl(31, 77%, 52%);
+   border-radius: 15px 0 0 15px;   
+   height: 46%;
+   width: 30%;
+
+}
+.SUVs {
+   background-color: hsl(184, 100%, 22%);
+   height: 46%;
+   width: 30%;
+
+}
+.Luxury {
+   background-color: hsl(179, 100%, 13%);   
+   border-radius: 0 15px 15px 0;
+   height: 46%;
+   width: 30%;
+}
+
+button {
+   background-color: hsl(0, 0%, 95%);
+   height: 3em;
+   width: 11em;
+   border-radius: 2em;
+   font-size: 20px;
+   font-family: 'Lexend Deca', sans-serif;
+   border: none;
+   cursor: pointer;
+   top: 630px;
+   margin-top: 10vh;
+   margin-bottom: 5vh;
+}    
+
+button:hover {
+   background-color: inherit;
+   border: 2px solid hsl(0, 0%, 95%);
+   color: hsl(0, 0%, 95%) !important;
+   transition: 0.2s;
+}
+button:active {
+   box-shadow: 0 5px #333;
+   transform: translateY(3px);
+   transition: 0s;
+ }
+
+
+
+
+@media screen and (max-width: 375px) {
+      html {
+         background-image: none;
+      }
+
+      main {
+        display: block;
+        margin: 0 20px 20px 0;
+        padding: 24px;
+        
+      }
+       main > div> h1 {
+        font-size: 46px;
+        padding-top: 40px;
+       }
+
+      main > div>  p {
+        font-size: 17px;
+        line-height: 28px;
+
+      }
+
+      .sedan {
+        height: 70vh;
+        border-radius: 15px 15px 0 0;
+        width: 42vh;
+       }
+
+      .SUVs {
+        height: 70vh;
+        width: 42vh;
+      }
+
+      .Luxury {
+        height: 70vh;
+        border-radius: 0 0 15px 15px;
+        width: 42vh;
+      }
+      
+}
